@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="manifest" href="manifest.json"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64x64.png"/>
+	<link rel="icon" type="image/png" sizes="128x128" href="img/favicon-128x128.png"/>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="css/fontawesome.css"/><!-- Font Awesome v. 5.12.0 -->
+	<link rel="stylesheet" href="css/solid.css"/>
+	<script defer src="script.js"></script>
+	<title>Tic-tac-toe</title>
+	<meta name="description" content="Simple game written in HTML5, CSS and JavaScript"/>
+	<meta name="keywords" content="tic-tac-toe, tic tac toe, tic, tac, toe, game, kółko i krzyżyk, kółko, krzyżyk, gra, HTML5, HTML, JavaScript"/>
+	<meta name="author" content="Karol Kiersnowski"/>
+</head>
+<body onload="startGame()">
+	<!-- <audio autoplay loop>
+		<source src="sounds/people-in-lounge.mp3"/>
+	</audio> -->
+
+	<main>
+		<header>
+			<h1 id="title">Tic-tac-toe</h1>
+			<p>
+				<span id="next-move">next move: player</span>
+				<span id="x-player">x</span>
+				<span id="o-player">o</span>
+			</p>
+		</header>
+
+		<table>
+			<tr>
+				<td><button class="square" id="b00" onclick="drawSign(0,0)"></button></td>
+				<td><button class="square" id="b01" onclick="drawSign(0,1)"></button></td>
+				<td><button class="square" id="b02" onclick="drawSign(0,2)"></button></td>
+			</tr>
+			<tr>
+				<td><button class="square" id="b10" onclick="drawSign(1,0)"></button></td>
+				<td><button class="square" id="b11" onclick="drawSign(1,1)"></button></td>
+				<td><button class="square" id="b12" onclick="drawSign(1,2)"></button></td>
+			</tr>
+			<tr>
+				<td><button class="square" id="b20" onclick="drawSign(2,0)"></button></td>
+				<td><button class="square" id="b21" onclick="drawSign(2,1)"></button></td>
+				<td><button class="square" id="b22" onclick="drawSign(2,2)"></button></td>
+			</tr>
+		</table>
+
+		<footer>
+			<p>
+				Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a><br>
+				from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</p>
+		</footer>
+
+		<button class="button" id="new-game" onclick="startGame()">
+			<i class="fas fa-redo"></i><br>New game
+		</button>
+		<button id="language" onclick="changeLanguage()">
+			<img id="language-image" src="img/poland.png"/>
+		</button>
+		<button class="button" id="sound" onclick="changeSound()">
+			<i class="fas fa-volume-up"></i>
+		</button>
+		<button class="button" id="info" onclick="showInfo()">
+			<i class="fas fa-info-circle"></i>
+		</button>
+		<button class="button" id="window-size" onclick="changeWindowSize()">
+			<i class="fas fa-expand-alt"></i>
+		</button>
+	</main>
+
+	<section id="window">
+		<h2>Koniec gry</h2>
+		<p id="player-won-the-game"></p>
+		<button id="close-window" onclick="closeWindow()">OK</button>
+	</section>
+</body>
+</html>

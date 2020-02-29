@@ -1,0 +1,187 @@
+@font-face {
+	font-family: "Finger Paint";
+	src: url(webfonts/FingerPaint-Regular.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Finger Paint", cursive;
+	color: #444;
+}
+
+body {
+	width: 100%;
+	text-align: center;
+}
+
+main {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	background-image: url("img/hip-square.png");
+}
+
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	font-size: 3vmin;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 1.5vmin;
+}
+
+table {
+	position: absolute;
+	top: 17vh;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	transform: rotate(-2deg);
+}
+
+td { border: 1.25vmin solid; }
+tr:first-child td { border-top: none; }
+tr:last-child td { border-bottom: none; }
+td:first-child { border-left: none; }
+td:last-child { border-right: none; }
+
+section#window {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: #ddd;
+	box-shadow: 0 0 1vmin #444;
+	opacity: 0.95;
+}
+
+button#close-window {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	margin: 0;
+	font-size: 6vmin;
+	transform: rotate(2deg);
+}
+
+h2 {
+	margin: 0;
+	font-size: 7vmin;
+}
+
+p {
+	margin: 0;
+}
+
+#x-player,
+#o-player {
+	vertical-align: sub;
+	font-size: 5vmin;
+	font-weight: bold;
+}
+
+img {
+	display: block;
+	height: 5vmin;
+}
+
+button.button,
+button#language {
+	position: absolute;
+	cursor: pointer;
+	border: none;
+	box-shadow: 0px 0px 1px grey;
+}
+
+button.button {
+	font-size: 1.5vmin;
+	padding: 1vmin;
+	background-color: #eee;
+}
+
+button#new-game {
+	bottom: 2vmin;
+	left: 2vmin;
+}
+
+button#sound {
+	bottom: 2vmin;
+	right: 2vmin;
+}
+
+button#info {
+	bottom: 2vmin;
+	right: 12vmin;
+}
+
+button#window-size {
+	top: 2vmin;
+	right: 2vmin;
+}
+
+button.button:hover { background-color: #eaeaea; }
+button.button > i { font-size: 5.5vmin; }
+
+button#language {
+	top: 2vmin;
+	left: 2vmin;
+	height: 5vmin;
+	padding: 0;
+	border: 1px solid #aaa;
+	background-color: inherit;
+}
+
+button.square {
+	float: left;
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+@media only screen and (orientation: landscape) {
+
+	button.square {
+		width: 25vh;
+		height: 25vh;
+		font-size: 18vmin;
+	}
+
+	section#window {
+		top: 30vh;
+		bottom: 30vh;
+		left: 20vw;
+		right: 20vw;
+		padding: 5vw;
+	}
+
+}
+
+@media only screen and (orientation: portrait) {
+
+	button.square {
+		width: 30vw;
+		height: 30vw;
+		font-size: 23vw;
+	}
+	
+	section#window {
+		top: 35vh;
+		bottom: 35vh;
+		left: 10vw;
+		right: 10vw;
+		padding: 5vh;
+	}
+
+}
