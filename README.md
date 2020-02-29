@@ -2,7 +2,7 @@ tic-tac-toe
 ===========
 Tic-tac-toe is a simple game written in HTML5, CSS and JavaScript.
 
-Project site - [cmd.sh](http://karol-kiersnowski.prv.pl/#tic-tac-toe)
+Project site - [karol-kiersnowski.prv.pl/#tic-tac-toe](http://karol-kiersnowski.prv.pl/#tic-tac-toe)
 
 Technologies
 ------------
@@ -25,10 +25,6 @@ Language
 Requirements
 ------------
 * Web browser
-
-Screenshots
------------
-![cmd.sh](http://karol-kiersnowski.prv.pl/projects/tic-tac-toe.png)
 
 Author
 ------
