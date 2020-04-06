@@ -1,11 +1,13 @@
-if (isServiceWorkersSupport) {
-    console.log('Will service worker register?');
-    navigator.serviceWorker.register(PATH).then(function () {
-        console.log("Yes it did.");
-    }).catch(function (err) {
-        console.log("No it didn't. This happened: ", err)
-    });
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+  .then(function(registration) {
+    console.log('Registration successful, scope is:', registration.scope);
+  })
+  .catch(function(error) {
+    console.log('Service worker registration failed, error:', error);
+  });
 }
+
 
 /*if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker-main.js').then(function(Sregistration) {
