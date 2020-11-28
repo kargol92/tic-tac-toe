@@ -1,8 +1,8 @@
-tic-tac-toe
+Tic-Tac-Toe
 ===========
-Tic-tac-toe is a simple game written in HTML5, CSS and JavaScript.
+Tic-Tac-Toe is a simple game written in HTML5, CSS and JavaScript.
 
-Game - [kargol92.github.io/tic-tac-toe](https://kargol92.github.io/tic-tac-toe)
+Game - [karol-kiersnowski.github.io/tic-tac-toe](https://karol-kiersnowski.github.io/tic-tac-toe)
 
 Technologies
 ------------
@@ -28,9 +28,8 @@ Requirements
 
 Author
 ------
-kargol92
+Karol Kiersnowski
 
 License
 -------
-[GNU General Public License v3.0](https://github.com/kargol92/tic-tac-toe/blob/master/LICENSE)
-
+[GNU General Public License v3.0](https://github.com/karol-kiersnowski/tic-tac-toe/blob/master/LICENSE)
