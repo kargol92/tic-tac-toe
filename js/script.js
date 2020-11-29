@@ -46,6 +46,7 @@ function changeLanguage() {
 		playerXWinTheGame = "Wygrał gracz x";
 		playerOWinTheGame = "Wygrał gracz o";
 		document.getElementById("language-image").src = "img/uk.png";
+		document.getElementById("language-image").alt = "uk";
 		document.getElementById("title").innerHTML = "Kółko i Krzyżyk";
 		document.getElementById("next-move").innerHTML = "następny ruch: gracz ";
 		//document.getElementById("x-player").innerHTML = "gracz x";
@@ -57,7 +58,8 @@ function changeLanguage() {
 		playerXWinTheGame = "Player x win the game";
 		playerOWinTheGame = "Player o win the game";
 		document.getElementById("language-image").src = "img/poland.png";
-		document.getElementById("title").innerHTML = "Tic-tac-toe";
+		document.getElementById("language-image").alt = "poland";
+		document.getElementById("title").innerHTML = "Tic-Tac-Toe";
 		document.getElementById("next-move").innerHTML = "next move: player ";
 		//document.getElementById("x-player").innerHTML = "x player";
 		//document.getElementById("o-player").innerHTML = "o player";

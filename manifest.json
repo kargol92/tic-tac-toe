@@ -1,6 +1,6 @@
 {
-	"name": "Tic-tac-toe",
-	"short_name": "Tic tac toe",
+	"name": "Tic-Tac-Toe",
+	"short_name": "Tic Tac Toe",
 	"description": "A simple game written in HTML5, CSS and JavaScript.",
 	"start_url": "/",
 	"display": "standalone",
